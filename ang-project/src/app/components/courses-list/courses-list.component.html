@@ -1,0 +1,13 @@
+<div class="courses-list">
+  
+  <app-course-item 
+    *ngFor="let course of courses"[course]=course 
+    (deleteCourse)="delete(course.id)" 
+    (editCourse)="edit(course.id)">
+  </app-course-item>
+
+  <button class="courses-list__load-more"(click)="loadMore()">
+    Load more
+  </button>
+
+</div>

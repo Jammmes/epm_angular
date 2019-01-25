@@ -1,0 +1,19 @@
+@import '../../../styles/colors.scss';
+
+.main{
+    padding: 0 10px;
+    border:1px solid $mainBgColor;
+    background: $mainBgColor;
+    flex: 1 0 auto;
+}
+
+.footer{
+    flex: 0 0 auto;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 110px;
+}

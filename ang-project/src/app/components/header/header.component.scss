@@ -1,0 +1,53 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/mixins.scss';
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background:  $headerLoginBgColor;
+}
+
+.logo-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px;
+    background: $headerLogoBgColor;
+}
+
+.logo-block__img{
+    padding: 10px;
+    background: url('./logo_epam.png');
+    width: 108px;
+    height: 25px;
+    background-size: cover;
+}
+
+.logo-block__title{
+    font-size: 1.5em;
+    line-height: 0.7em;
+    padding: 10px;
+    color:$headerTextColor;
+}
+
+.login-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.login-block__user{
+    padding: 10px;
+    color:$headerTextColor;
+}
+
+.login-block__logOff{
+    padding:10px;
+    @include buttonStyle();
+}

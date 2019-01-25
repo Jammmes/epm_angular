@@ -1,0 +1,57 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/mixins.scss';
+
+.course-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 2px 0px 5px $blocksShadowColor;
+    border:none;
+    border-radius: 5px;
+}
+.course-item-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.course-item-data-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.course-item-data-header__title{
+    margin-right: auto;
+    @include badgeStyle();
+}
+
+.course-item-data-header__duration{
+    margin-right: 10px;
+    @include badgeStyle();
+}
+
+.course-item-data-header__date{
+    @include badgeStyle();
+}
+
+.course-item-data__description{
+
+}
+
+.course-item-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.course-item-control__item{
+@include buttonStyle();
+
+}
+

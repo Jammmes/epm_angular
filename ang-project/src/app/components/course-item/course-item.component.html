@@ -1,0 +1,15 @@
+<div class="course-item">
+  <div class="course-item-data">
+    <div class="course-item-data-header">
+      <div class="course-item-data-header__title">{{course.title}}</div>
+      <div class="course-item-data-header__duration">{{course.duration}}</div>
+      <div class="course-item-data-header__date">{{course.creationDate}}</div>
+    </div>
+    <div class="course-item-data__description">{{course.description}}</div>
+  </div>
+  <div class="course-item-control">
+    <button class="course-item-control__item" (click)="onEdit()">Edit</button>
+    <button class="course-item-control__item" (click)="onDelete()" >Delete</button>
+  </div>
+
+</div>

@@ -1,0 +1,9 @@
+@import '../../../styles/colors.scss';
+
+.footer__caption{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: $footerTextColor;
+    background: $footerBgColor;
+}

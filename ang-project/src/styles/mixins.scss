@@ -1,0 +1,23 @@
+@import '../../../styles/colors.scss';
+
+@mixin buttonStyle() {
+margin: 5px;
+padding:5px 10px;
+border:none;
+border-radius: 3px;
+box-shadow: 2px 0px 5px $blocksShadowColor;
+color: $buttonTextColor;
+    &:hover{
+        cursor: pointer;
+        background: $buttonHoverBgColor;
+        color:$buttonHoverTextColor;
+    }
+}
+
+@mixin badgeStyle(){
+    background: $itemElementsBgColor;
+    border-radius: 3px;
+    padding: 1px 4px;
+    border:none;
+    color:$itemElementsColor;
+}

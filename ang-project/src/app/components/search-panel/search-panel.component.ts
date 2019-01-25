@@ -1,0 +1,21 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-search-panel',
+  templateUrl: './search-panel.component.html',
+  styleUrls: ['./search-panel.component.scss']
+})
+export class SearchPanelComponent implements OnInit {
+
+  public textInput: string;
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  public find() {
+    console.log('Searching for ', this.textInput);
+  }
+
+}

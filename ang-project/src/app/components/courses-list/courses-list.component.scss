@@ -1,0 +1,15 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/mixins.scss';
+
+.courses-list{
+    margin:5px 0;
+    border:1px solid $lightBorderColor;
+    border-radius: 3px;
+}
+
+.courses-list__load-more{
+    @include buttonStyle();
+    width: 100%;
+    margin: 0;
+    box-shadow: none;     
+}

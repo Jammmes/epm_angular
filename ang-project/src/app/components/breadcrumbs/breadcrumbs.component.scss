@@ -1,0 +1,12 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/mixins.scss';
+
+.breadcrumbs{
+    margin:5px 0;
+    border-bottom:1px solid $lightBorderColor;
+}
+
+.breadcrumbs__caption{
+    font-style: italic;
+    margin:5px;
+}
